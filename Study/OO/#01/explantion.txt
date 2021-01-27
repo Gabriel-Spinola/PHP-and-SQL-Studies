@@ -1,0 +1,23 @@
+Objects Orientation in PHP or OOP
+
+In Procedural Modules:
+    defines();
+    $vars
+    funcs(); || funcs() { }
+;
+
+in OOP:
+    /*Object*/ Human
+    { 
+        // attributes
+        
+        name
+        age
+        weight
+
+        // actions and funcs who in this case are called methods()
+
+        grow()
+        eat()
+    }
+;
