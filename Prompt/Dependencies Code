@@ -1,0 +1,5 @@
+--Dependencies Code--
+
+composer
+
+composer require name/dependecy
