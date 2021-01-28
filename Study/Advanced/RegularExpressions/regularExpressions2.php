@@ -53,7 +53,8 @@ echo '6°: ' . htmlentities($matches[2][1]) . "<br>";
 
 echo "<br>===========6°=============<br>";
 
-$str = 'Gui';
+$str = 'Gui
+ok';
 
 // the "i" letter turns off case sensitivity
-echo preg_match('/gui/i', $str) ? 'true' : 'false';
+echo preg_match('/gui\\r\\n/si', $str) ? 'true' : 'false';
