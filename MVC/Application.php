@@ -1,8 +1,10 @@
 <?php
 
+const INCLUDE_PATHl = 'http://localhost:7000/php/PHP-Study/MVC/Views/Pages/';   
+
 class Application {
     /**
-     * @return void
+     * @return Application
      * 
      * Execute the program.
      * - Get and format url
