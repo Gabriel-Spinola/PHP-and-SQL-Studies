@@ -2,9 +2,12 @@
 
 namespace Controllers;
 
-class Controller {
+abstract class Controller {
+    /** Reference to a view class*/
     protected object $view;
+
+    /** Reference to a model class */
     protected object $model;
 
-    public function execute() {}
+    public abstract function execute();
 }
