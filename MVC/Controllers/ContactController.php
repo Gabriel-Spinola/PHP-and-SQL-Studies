@@ -23,7 +23,7 @@ class ContactController extends Controller {
     public function execute(): void {
         if(isset($_POST['submit'])) {
 echo '<div class="mail-bug">';
-            ContactModel :: sendForm();
+            \Models\ContactModel :: sendForm();
 echo "</div>";
         }
 
