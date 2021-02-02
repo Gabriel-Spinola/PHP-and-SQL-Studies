@@ -1,5 +1,9 @@
 <main class="main">
 
-    <h1><?php print $pageInfo['title'] ?></h1>
+    <div class="center">
+
+        <h1><?php print $pageInfo['title'] ?></h1>
+
+    </div><!--center-->
 
 </main><!--main-->
