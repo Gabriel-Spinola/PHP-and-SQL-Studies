@@ -1,0 +1,1 @@
+<h1><?php print $pageInfo['title'] ?></h1>
