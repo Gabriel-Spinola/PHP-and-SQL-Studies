@@ -16,7 +16,7 @@ class ContactController extends Controller {
     }
 
     /**
-     *##  **Send page to the client With custom info**
+     *### **Send page to the client With custom info**
      * 
      * @return PageView
      * 
