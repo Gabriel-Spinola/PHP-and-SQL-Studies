@@ -16,13 +16,15 @@ class Application {
         $url .= "Controller";
 
         if (file_exists('Controllers/' . $url . '.php')) {
+            $className = 'Controllers\\'. $url;
+
             echo 'loading class: ' . $url;
 
-           $controller = new $url();
+            $controller = new $className;
 
-           $controller -> execute();
+            $controller -> execute();
         } else {
             die ("ERROR::APPLICATION | Controller doesn't exists");
         }
     }
-}
+}   
