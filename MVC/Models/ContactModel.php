@@ -7,8 +7,10 @@ namespace Models;
 */
 class ContactModel {
     /**
+     * @return mail
      * 
-     */
+     * Send an email with form data.
+    */
     public static function sendForm(): void {
         $mail = new \Email('smtp.gmail.com', 'sampleemail7000@gmail.com', 'Sample.123', 'Gabriel');
 
@@ -17,6 +19,7 @@ class ContactModel {
             'subject' => 'MVC System Message',
             'body' => 'Body Message',
         ]);
+
         $mail -> SendEmail();
     }
 }

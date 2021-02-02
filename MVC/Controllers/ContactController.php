@@ -2,10 +2,12 @@
 
 namespace Controllers;
 
+use Models\ContactModel;
+
 /**
  * @namespace Controllers
  * @Receive $view, $model, execute(): void
- * @From: Controller
+ * @From Controller
 */
 class ContactController extends Controller {
 
@@ -19,6 +21,12 @@ class ContactController extends Controller {
      * Send page to the client With custom info
     */
     public function execute(): void {
+        if(isset($_POST['submit'])) {
+echo '<div class="mail-bug">';
+            ContactModel :: sendForm();
+echo "</div>";
+        }
+
         $this -> view -> render([
             'title' => 'Contact Page'
         ]);

@@ -1,5 +1,3 @@
-<div class="mail-bug">
-
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -15,7 +13,7 @@ class Email
         $password, $name,
     ) {
         // Load Composer's autoloader
-        require 'phpMailer/vendor/autoload.php';
+        require 'Imports/phpMailer/vendor/autoload.php';
 
         // Instantiation and passing `true` enables exceptions
         $this -> mail = new PHPMailer(true);
@@ -64,5 +62,3 @@ class Email
 }
 
 ?>
-
-</div>
