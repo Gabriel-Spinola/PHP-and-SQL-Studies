@@ -2,7 +2,7 @@
 
 namespace Controllers;
 
-class HomeController {
+class HomeController extends Controller {
     /**
      * @return void
      * 

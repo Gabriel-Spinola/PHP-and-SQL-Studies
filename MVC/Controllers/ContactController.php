@@ -2,9 +2,7 @@
 
 namespace Controllers;
 
-class ContactController {
-    private $view;
-
+class ContactController extends Controller {
     public function __construct() { 
         $this -> view = new \Views\ContactView('contact');
     }
