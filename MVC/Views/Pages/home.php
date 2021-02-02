@@ -1,9 +1,15 @@
-<main class="main">
+<main class="home main">
 
-    <div class="center">
+	<div class="center">
 
-        <h1><?php print $pageInfo['title'] ?></h1>
+        <h2>Welcome!</h2>
+        
+		<article class="alert">
 
+            <h3>Welcome to our company's website. Here you can find the best services for your business.</h3>
+            
+        </article><!--alert-->
+        
     </div><!--center-->
-
+    
 </main><!--main-->

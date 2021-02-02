@@ -1,21 +1,31 @@
-<main class="main">
+<main class="main-call">
 
-    <div class="center">
+	<div class="center">
 
-        <h1><?php print $pageInfo['title'] ?></h1>
-
-    </div><!--center-->
-
-</main><!--main-->
-
-<section class="contact">
-
-    <form method="POST">
+        <h2><?php echo $pageInfo['title'] ?></h2>
     
-        <input type="text" name="name" placeholder="name" required>
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <input type="submit" name="submit">
+    </div><!--center-->
+    
+</main><!--chamada-->
 
-    </form>
+<section class="contact main">
 
-</section><!--contact-->
+	<div class="center">
+
+		<form method="post">
+
+            <div class="alert">
+
+                <h3>Entre em contato com a nossa equipe!</h3>
+
+            </div><!--alert-->
+        
+			<input type="text" name="name" placeholder="Name..">
+			<textarea name="message" placeholder="Your message..."></textarea>
+            <input type="submit" name="submit" value="Enviar!">
+            
+        </form>
+        
+    </div><!--center-->
+    
+</section><!--contato-->

@@ -29,6 +29,8 @@
 
             </nav><!--menu-->
 
+            <div class="clear"></div>
+
         </div><!--center-->
 
     </header>
