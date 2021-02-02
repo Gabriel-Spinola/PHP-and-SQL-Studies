@@ -14,4 +14,3 @@
  *  Contact View => Render the page.
  *  Contact Model => Store the required function
 */
-
