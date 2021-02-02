@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Models\ContactModel;
+use Views\MainView;
 
 /**
  * @namespace Controllers
@@ -12,11 +13,11 @@ use Models\ContactModel;
 class ContactController extends Controller {
 
     public function __construct() { 
-        $this -> view = new \Views\MainView('contact');
+        $this -> view = new MainView('contact');
     }
 
     /**
-     *### **Send page to the client With custom info**
+     *## **Send page to the client With custom info**
      * 
      * @return PageView
      * 
@@ -26,7 +27,7 @@ class ContactController extends Controller {
     public function execute(): void {
         if(isset($_POST['submit'])) {
 echo '<div class="mail-bug">';
-            \Models\ContactModel :: sendForm();
+            ContactModel :: sendForm();
 echo "</div>";
         }
 

@@ -2,6 +2,8 @@
 
 namespace Controllers;
 
+use Views\MainView;
+
 /**
  * @namespace Controllers
  * @Receive $view, $model, execute(): void
@@ -10,7 +12,7 @@ namespace Controllers;
 class HomeController extends Controller {
 
     public function __construct() { 
-        $this -> view = new \Views\MainView('home');
+        $this -> view = new MainView('home');
     }
 
     /**

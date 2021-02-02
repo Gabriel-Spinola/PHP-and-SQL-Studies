@@ -2,6 +2,8 @@
 
 namespace Controllers;
 
+use Views\MainView;
+
 /**
  * @namespace Controllers
  * @Receive $view, $model, execute(): void
@@ -10,7 +12,7 @@ namespace Controllers;
 class ExtraController extends Controller {
 
     public function __construct() { 
-        $this -> view = new \Views\MainView('extra');
+        $this -> view = new MainView('extra');
     }
 
     /**
