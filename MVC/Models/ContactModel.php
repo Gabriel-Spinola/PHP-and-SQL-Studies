@@ -7,9 +7,11 @@ namespace Models;
 */
 class ContactModel {
     /**
-     * @return mail
+     * @return Mail-Send
      * 
      * Send an email with form data.
+     * 
+     * - Error view
     */
     public static function sendForm(): void {
         $mail = new \Email('smtp.gmail.com', 'sampleemail7000@gmail.com', 'Sample.123', 'Gabriel');
@@ -20,6 +22,14 @@ class ContactModel {
             'body' => 'Body Message',
         ]);
 
-        $mail -> SendEmail();
+        if ($mail -> SendEmail()): ?>
+
+            <script>alert('Success')</script>
+        
+        <?php else: ?>
+            
+            <script>alert('Error')</script>
+
+        <?php endif;
     }
 }
