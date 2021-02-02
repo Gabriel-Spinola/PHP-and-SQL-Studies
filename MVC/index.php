@@ -25,6 +25,10 @@
  * include classes based on their name
 */
 $autoload = function(string $class): void {
+    if ($class == 'Email') {
+        require 'Imports/phpMailer/vendor/autoload.php';
+    }
+
     include $class . '.php';
 };
 

@@ -52,7 +52,7 @@ class Email
         $this -> mail -> addAddress($email, $name); //'zerogravitystd@gmail.com', 'Gabriel')  // Add a recipient
     }
 
-    public function FormatEmail($info): void {
+    public function FormatEmail(array $info): void {
         $this -> mail -> Subject = $info['subject']; // 'Here is the subject'
         $this -> mail -> Body    = $info['body']; // 'This is the HTML message body <b>in bold!</b>'
         $this -> mail -> AltBody = strip_tags($info['body']); // 'This is the body in plain text for non-HTML mail clients'
