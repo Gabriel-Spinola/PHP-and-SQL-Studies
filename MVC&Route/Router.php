@@ -2,9 +2,9 @@
 
 class Router {
     /**
-     * 
+     * @return Route
     */
-    public function route(string $path, $arg) {
+    public static function route(string $path, mixed $arg) {
         $url = @$_GET['url'];
 
         if ($url == $path) {

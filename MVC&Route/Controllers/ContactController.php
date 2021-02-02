@@ -11,11 +11,6 @@ use Views\MainView;
  * @From Controller
 */
 class ContactController extends Controller {
-
-    public function __construct() { 
-        $this -> view = new MainView('contact');
-    }
-
     /**
      *### **Send page to the client With custom info**
      * 
@@ -34,8 +29,18 @@ echo "</div>";
             die;
         }
 
-        $this -> view -> render([
-            'title' => 'Contact Page'
-        ]);
+        \Router :: route('contact', function() {
+            $this -> view = new MainView('contact');
+
+            $this -> view -> render([
+                'title' => 'Contact Page'
+            ]);
+        });
+
+        \Router :: route('contact/success', function() {
+            $this -> view = new MainView('contact-success');
+
+            $this -> view -> render();
+        });
     }
 }

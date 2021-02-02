@@ -1,13 +1,3 @@
-<div class="chamada">
-
-	<div class="center">
-
-    <h2><?php echo $pageInfo['title'] ?></h2>
-    
-    </div><!--center-->
-    
-</div><!--chamada-->
-
 <div class="contact main">
 
 	<div class="center">
@@ -18,6 +8,6 @@
             
         </div><!--alert-->
         
-    </div>
+    </div><!--center-->
     
 </div><!--contact-->

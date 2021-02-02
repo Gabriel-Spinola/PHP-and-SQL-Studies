@@ -16,7 +16,7 @@
 
             <div class="alert">
 
-                <h3>Entre em contato com a nossa equipe!</h3>
+                <h3>Contact Us!</h3>
 
             </div><!--alert-->
         
