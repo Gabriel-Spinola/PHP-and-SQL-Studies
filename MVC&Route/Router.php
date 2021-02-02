@@ -4,7 +4,7 @@ class Router {
     /**
      * @return Route
     */
-    public static function route(string $path, mixed $arg) {
+    public static function route(string $path, Closure $arg) {
         $url = @$_GET['url'];
 
         if ($url == $path) {
@@ -16,12 +16,12 @@ class Router {
         $url = explode('/', @$_GET['url']);
 
         $ok = true;
-        $couple = [];
+        $pair = [];
 
         if (count($path) == count($url)) {
             foreach ($path as $key => $row) {
                 if ($row == '?') {
-                    $couple[$key] = $url[$key];
+                    $pair[$key] = $url[$key];
                 } else if ($url[$key] != $row) {
                     $ok = false;
 
@@ -29,7 +29,7 @@ class Router {
                 }
 
                 if ($ok) {
-                    $arg($couple);
+                    $arg($pair);
 
                     die;
                 }
