@@ -2,9 +2,11 @@
 
 namespace Views;
 
-class ContactView {
+class MainView {
     public function __construct(
-        private $fileName
+        private $fileName,
+        private $header = 'header.php',
+        private $footer = 'footer.php',
     ) { }
 
     /**

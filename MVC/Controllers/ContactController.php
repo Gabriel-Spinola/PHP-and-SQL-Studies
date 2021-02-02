@@ -2,9 +2,14 @@
 
 namespace Controllers;
 
+/**
+ * @Receive $view, $model, execute(): void
+ * @From: Controller
+ */
 class ContactController extends Controller {
+
     public function __construct() { 
-        $this -> view = new \Views\ContactView('contact');
+        $this -> view = new \Views\MainView('contact');
     }
 
     /**
