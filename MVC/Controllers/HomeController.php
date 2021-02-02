@@ -2,13 +2,24 @@
 
 namespace Controllers;
 
+/**
+ * @Receive $view, $model, execute(): void
+ * @From: Controller
+*/
 class HomeController extends Controller {
+
+    public function __construct() { 
+        $this -> view = new \Views\MainView('home');
+    }
+
     /**
-     * @return void
+     * @return PageView
      * 
-     * Run the page 
+     * Send page to the client With custom infos
     */
     public function execute(): void {
-        echo ' execute home ';
+        $this -> view -> render([
+            'title' => 'Home'
+        ]);
     }
 }

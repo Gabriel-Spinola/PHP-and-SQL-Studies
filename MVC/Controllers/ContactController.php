@@ -13,11 +13,13 @@ class ContactController extends Controller {
     }
 
     /**
-     * @return void
+     * @return PageView
      * 
-     * Run the page 
+     * Send page to the client With custom info
     */
     public function execute(): void {
-        $this -> view -> render();
+        $this -> view -> render([
+            'title' => 'Contact Page'
+        ]);
     }
 }

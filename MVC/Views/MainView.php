@@ -10,15 +10,15 @@ class MainView {
     ) { }
 
     /**
-     * @return void
+     *### **Render the target ($this->fileName) Page**
      * 
-     * Render the target ($this->fileName) Page
+     * @return StructuredPage
      * 
      * - Include the header (custom or default)
      * - Include the target Page
      * - Include the footer (custom or default)
     */
-    public function render(): void {
+    public function render(array $pageInfo = []): void {
         include 'Pages/Templates/' . $this -> header . '.php';
         include 'Pages/' . $this -> fileName . '.php';
         include 'Pages/Templates/' . $this -> footer . '.php';

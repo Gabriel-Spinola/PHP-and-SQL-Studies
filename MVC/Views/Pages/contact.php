@@ -1,1 +1,1 @@
-<h1>Contact</h1>
+<h1><?php print $pageInfo['title'] ?></h1>
