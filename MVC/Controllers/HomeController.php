@@ -3,6 +3,7 @@
 namespace Controllers;
 
 /**
+ * @namespace Controllers
  * @Receive $view, $model, execute(): void
  * @From: Controller
 */

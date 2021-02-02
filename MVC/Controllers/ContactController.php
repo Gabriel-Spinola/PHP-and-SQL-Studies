@@ -3,9 +3,10 @@
 namespace Controllers;
 
 /**
+ * @namespace Controllers
  * @Receive $view, $model, execute(): void
  * @From: Controller
- */
+*/
 class ContactController extends Controller {
 
     public function __construct() { 

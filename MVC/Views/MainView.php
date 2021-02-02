@@ -2,6 +2,9 @@
 
 namespace Views;
 
+/**
+ * @namespace View
+*/
 class MainView {
     public function __construct(
         private $fileName,
