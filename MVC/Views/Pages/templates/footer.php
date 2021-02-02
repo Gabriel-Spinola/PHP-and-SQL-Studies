@@ -1,4 +1,8 @@
-<h1>Footer</h1>
+    <footer>
+    
+        <p>All rights reserved&copy;</p>
+    
+    </footer>
 
 </body>
 </html>

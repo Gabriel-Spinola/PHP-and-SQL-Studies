@@ -13,14 +13,22 @@
 
 <body>
 
-<h2>Menu Items:</h2>
+    <header>
 
-<br>
+        <div class="center">
+        
+            <div class="branch">Logo</div>
 
-<?php foreach($this -> menuItems as $key => $value): ?>
+            <nav class="menu">
+            
+                <?php foreach($this -> menuItems as $key => $value): ?>
 
-    <h2><?php print $value ?></h2>
+                    <a href="<?php echo INCLUDE_PATH . strtolower($value) ?>"><?php print $value ?></a>
 
-<?php endforeach ?>
+                <?php endforeach ?>
 
-<br>
+            </nav><!--menu-->
+
+        </div><!--center-->
+
+    </header>
