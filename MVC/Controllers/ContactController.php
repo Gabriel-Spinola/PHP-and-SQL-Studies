@@ -16,9 +16,12 @@ class ContactController extends Controller {
     }
 
     /**
+     *##  **Send page to the client With custom info**
+     * 
      * @return PageView
      * 
-     * Send page to the client With custom info
+     * - Form Send
+     * - Rendering
     */
     public function execute(): void {
         if(isset($_POST['submit'])) {
