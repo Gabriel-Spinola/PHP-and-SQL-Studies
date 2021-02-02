@@ -10,7 +10,7 @@ class ContactView {
     /**
      * @return void
      * 
-     * Render the target Page
+     * Render the target ($this->fileName) Page
     */
     public function render(): void {
         include 'pages/' . $this -> fileName . '.php';

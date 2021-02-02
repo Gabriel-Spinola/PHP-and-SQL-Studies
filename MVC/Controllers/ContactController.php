@@ -6,7 +6,7 @@ class ContactController {
     private $view;
 
     public function __construct() { 
-        $this -> view = new ContactView;
+        $this -> view = new \Views\ContactView('contact');
     }
 
     /**
