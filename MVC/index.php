@@ -1,9 +1,7 @@
 <?php
 
-## index file ##
-
 /**
- * MVC
+ * ==== MVC ====
  * 
  * M: MODEL
  * V: VIEW
