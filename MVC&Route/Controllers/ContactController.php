@@ -29,6 +29,9 @@ class ContactController extends Controller {
 echo '<div class="mail-bug">';
             ContactModel :: sendForm();
 echo "</div>";
+
+            header('Location: ' . INCLUDE_PATH . 'contact/success');
+            die;
         }
 
         $this -> view -> render([
