@@ -1,7 +1,7 @@
 <?php
 
-const INCLUDE_PATHl = 'http://localhost:7000/php/PHP-Study/MVC/Views/Pages/';
-const INCLUDE_PATH = 'http://localhost:7000/php/PHP-Study/MVC/';
+const INCLUDE_PATHl = 'http://localhost:7000/php/PHP-Study/MVC&Route/Views/Pages/';
+const INCLUDE_PATH = 'http://localhost:7000/php/PHP-Study/MVC&Route/';
 
 class Application {
     /**
