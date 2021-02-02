@@ -9,6 +9,6 @@ class ContactController {
      * Run the page 
     */
     public function execute(): void {
-        echo 'execute contact';
+        echo ' execute contact ';
     }
 }
