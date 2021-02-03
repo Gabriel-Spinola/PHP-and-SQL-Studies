@@ -33,6 +33,32 @@
  * }
 */
 
+$t = date("H");
+
+if ($t < "20") {
+    echo "Have a good day!";
+}
+
+// ...
+
+if ($t < "20") {
+    echo "Have a good day!";
+} else {
+    echo "Have a good night!";
+}
+
+// ...
+
+if ($t < "10") {
+    echo "Have a good morning!";
+} elseif ($t < "20") {
+    echo "Have a good day!";
+} else {
+    echo "Have a good night!";
+}
+
+// ...
+
 $var_1 = 'G';
 $var_2 = 'A';
 
@@ -77,6 +103,53 @@ if($var_1 == $var_2) {
 <?php } ?> 
 
 <?php
+
+/**
+ * The PHP switch Statement
+ * Use the switch statement to select one of many blocks of code to be executed.
+ * 
+ * Syntax
+ * switch (n) {
+ *   case label1:
+ *     code to be executed if n=label1;
+ *     break;
+ * 
+ *   case label2:
+ *     code to be executed if n=label2;
+ *     break;
+ * 
+ *   case label3:
+ *     code to be executed if n=label3;
+ *     break;
+ *     ...
+ *   default:
+ *     code to be executed if n is different from all labels;
+ * }
+ * 
+ * This is how it works: First we have a single expression n (most often a variable), that is evaluated once.
+ * The value of the expression is then compared with the values for each case in the structure.
+ * If there is a match, the block of code associated with that case is executed. Use break to prevent the code from running into the next case automatically.
+ * The default statement is used if no match is found.
+*/
+
+$favcolor = "red";
+
+switch ($favcolor) {
+    case "red":
+        echo "Your favorite color is red!";
+        break;
+
+    case "blue":
+        echo "Your favorite color is blue!";
+        break;
+
+    case "green":
+        echo "Your favorite color is green!";
+        break;
+        
+    default:
+        echo "Your favorite color is neither red, blue, nor green!";
+}
 
 /**
  * In the following chapters you will learn how to repeat code by using loops in PHP.
