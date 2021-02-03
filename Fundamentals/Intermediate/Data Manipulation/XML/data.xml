@@ -1,15 +1,15 @@
 <rss>
     <info>
         <items>
-            <nome>Gabriel</nome>
-            <idade>89</idade>
+            <name>John</name>
+            <age>89</age>
         </items>
     </info>
 
     <info2>
         <items>
-            <nome>Viviane</nome>
-            <idade>456</idade>
+            <name>Doe</name>
+            <age>456</age>
         </items>
     </info2>
 </rss>
