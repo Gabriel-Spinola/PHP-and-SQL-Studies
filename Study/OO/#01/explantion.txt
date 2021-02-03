@@ -1,0 +1,20 @@
+Objects Orientation in PHP or OOP
+
+Procedural PHP:
+    $variables
+    functions() { }
+;
+
+Object Oriented PHP:
+    /*Object*/ Human
+    { 
+        // attributes
+        name
+        age
+        weight
+
+        // methods() { }
+        grow() { }
+        eat() { }
+    }
+;

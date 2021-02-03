@@ -1,0 +1,15 @@
+<rss>
+    <info>
+        <items>
+            <nome>Gabriel</nome>
+            <idade>89</idade>
+        </items>
+    </info>
+
+    <info2>
+        <items>
+            <nome>Viviane</nome>
+            <idade>456</idade>
+        </items>
+    </info2>
+</rss>
