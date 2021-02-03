@@ -86,8 +86,7 @@ class Subsystem2
  * the client might not even know about the existence of the subsystem. This
  * approach lets you keep the complexity under control.
 */
-function clientCode(Facade $facade)
-{
+function clientCode(Facade $facade) {
     // ...
 
     echo $facade -> operation();
