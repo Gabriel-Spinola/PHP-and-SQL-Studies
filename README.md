@@ -2,8 +2,11 @@
  
  This Repository groups all my practical exercises and notes while studying PHP, SQL, and Software Architecture
  
+ ## How to run in your PC
+ 
+ 
  ## Links
- Some of the source I get from: <br>
+ Stuff that helped to create this repository: <br>
  - [W3School](https://www.w3schools.com/default.asp)
  - [Refactoring Guru](https://refactoring.guru/)
  - [Danki Code](https://cursos.dankicode.com/)
