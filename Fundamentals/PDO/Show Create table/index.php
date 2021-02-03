@@ -2,7 +2,7 @@
         CREATE TABLE                     
 ----------------------------
 
-<?php $pdo = new PDO('mysql:host=localhost;dbname=pdo4', 'root', '');
+<?php $pdo = new PDO('mysql:host=localhost;dbname=pdo_study4', 'root', '');
 
     /**
      * Create a table with the name "course"

@@ -7,10 +7,10 @@
  *       Structure
  * |---------------------|
  * |=====tb_category====|
- * | category_id | nome |
+ * | category_id | name |
  * |---------------------|
  * |======tb_movies======|
- * |movie_category | nome|
+ * |movie_category | name|
  * |---------------------|
  * 
  * ========================================================
@@ -24,7 +24,7 @@
  * needs to categorize the films with subqueries
 */
 
-$pdo = new PDO('mysql:host=localhost;dbname=pdo4', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=pdo_study4', 'root', '');
 
 $sql = $pdo -> prepare(
     // Query
@@ -32,7 +32,7 @@ $sql = $pdo -> prepare(
     WHERE category_id = (
         /* Sub Query */ 
         SELECT category_id FROM tb_category
-        WHERE nome = 'terror'
+        WHERE `name` = 'terror'
     );"
 );
 
