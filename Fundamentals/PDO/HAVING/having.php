@@ -4,7 +4,7 @@
 
 <?php 
 
-$pdo = new PDO('mysql:host=localhost;dbname=pdo3', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=pdo_study3', 'root', '');
 
 // group all customers by title and select those who have more than 5 points
 $select = $pdo -> prepare(

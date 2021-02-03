@@ -2,7 +2,7 @@
             SELECT           
 -------------------------------
 
-<?php $pdo = new PDO('mysql:host=localhost;dbname=pdo', 'root', ''); 
+<?php $pdo = new PDO('mysql:host=localhost;dbname=pdo_study', 'root', ''); 
 
     
 // * = all columns
@@ -47,7 +47,7 @@ $sql = $pdo -> prepare(
     "SELECT * FROM posts WHERE categories_id=?"
 );
 
-$sql -> execute([$_GET['categories_id']]);
+$sql -> execute([1]);
 
 // get data
 $info = $sql -> fetchAll();
@@ -73,7 +73,7 @@ $info = $sql -> fetchAll();
 foreach ($info as $key => $value) {
     $categories_id = $value['id'];
 
-    echo "<br>" . 'Showing posts from: ' . $value['nome'] . "<br> <br>";
+    echo "<br>" . 'Showing posts from: ' . $value['name'] . "<br> <br>";
 
     // Select all post with the same category_id as the categories_id from the categories table 
     $sql = $pdo -> prepare(

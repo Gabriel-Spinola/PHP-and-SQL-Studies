@@ -29,8 +29,9 @@
 
 <?php
 
-    date_default_timezone_set('your/region');
-    $pdo = new PDO('mysql:host=hostname;dbname=databasename', 'user', 'password');
+    date_default_timezone_set('America/Sao_Paulo');
+
+    $pdo = new PDO('mysql:host=localhost;dbname=pdo_study', 'root', '');
 
     if (isset($_POST['action'])) {
         # Get form data

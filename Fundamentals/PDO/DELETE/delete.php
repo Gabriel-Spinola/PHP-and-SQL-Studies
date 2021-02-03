@@ -2,9 +2,9 @@
           DELETE            
 ----------------------------
 
-<?php $pdo = new PDO('mysql:host=localhost;dbname=pdo', 'root', ''); 
+<?php $pdo = new PDO('mysql:host=localhost;dbname=pdo_study', 'root', ''); 
 
-$id = 14;
+$id = 3;
 
 // Delete all data blocks with id 14
 $sql = $pdo -> prepare(

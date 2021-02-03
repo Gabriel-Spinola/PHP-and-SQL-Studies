@@ -4,33 +4,33 @@
 
 <?php 
 
-$pdo = new PDO('mysql:host=localhost;dbname=pdo', 'root', ''); 
+$pdo = new PDO('mysql:host=localhost;dbname=pdo_study', 'root', ''); 
 
 /*
 $sql = $pdo -> prepare(
     // updates the id 11 data
-    "UPDATE `clients` SET nome='V', sobrenome='SS' WHERE id=$id"
+    "UPDATE `clients` SET name='V', surname='SS' WHERE id=$id"
                                                         if statement
 );*/
 
-$nome1 = 'Gabriel'; $sobrenome1 = 'Spinola';
-$nome2 = 'Mario'; $sobrenome2 = 'Da Silva';
+$name1 = 'Gabriel'; $surname1 = 'Spinola';
+$name2 = 'Mario'; $surname2 = 'Da Silva';
 
 $sql = $pdo -> prepare(
-    "UPDATE `clients` SET nome=?, sobrenome=?
-    WHERE nome=? AND sobrenome=? OR nome='V'"
+    "UPDATE `clients` SET name=?, surname=?
+    WHERE name=? AND surname=? OR name='V'"
 );
 
-if ($sql -> execute([$nome1, $sobrenome1, $nome2, $sobrenome2])) { 
+if ($sql -> execute([$name1, $surname1, $name2, $surname2])) { 
     echo 'UPDATED'; 
 }
 
 echo "<br> <br>";
 
-$id = 11;
+$id = 2;
 
 $sql = $pdo -> prepare(
-    "UPDATE `clients` SET nome='Rogerio', sobrenome='Oiregor' WHERE id=?"
+    "UPDATE `clients` SET name='Rogerio', surname='Oiregor' WHERE id=?"
 );
 
 if ($sql -> execute([$id])) { 

@@ -4,11 +4,11 @@
 
 <?php date_default_timezone_set('America/Sao_Paulo');
 
-$pdo = new PDO('mysql:host=localhost;dbname=pdo', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=pdo_study', 'root', '');
 
 // SELECT ALL clients with id in 11, 12, 15
 $sql = $pdo -> prepare(
-    "SELECT * FROM clients WHERE id IN (11, 12, 15)"
+    "SELECT * FROM clients WHERE id IN (4, 5, 8)"
 );
 
 $sql -> execute();

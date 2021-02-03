@@ -6,19 +6,19 @@
 
 <?php 
 
-$pdo = new PDO('mysql:host=localhost;dbname=pdo2', 'root', ''); 
+$pdo = new PDO('mysql:host=localhost;dbname=pdo_study2', 'root', ''); 
 $pdo -> setAttribute(PDO :: ATTR_ERRMODE, PDO :: ERRMODE_EXCEPTION);
 
 
 // ASC = crescente, DESC = decrecente.
 $sql = $pdo -> prepare(
-    "SELECT * FROM `clientes` GROUP BY cargo ORDER BY id ASC LIMIT 4"
+    "SELECT * FROM `clientes` GROUP BY title ORDER BY id ASC LIMIT 4"
 ); $sql -> execute();
 
 $clientes = $sql -> fetchAll();
 
 foreach ($clientes as $key => $value) {
-    echo '<hr>' . 'value: ' . $value['nome'] . '; cargo: ' . $value['cargo'] . '; id ' . $value['id'];
+    echo '<hr>' . 'value: ' . $value['name'] . '; title: ' . $value['title'] . '; id ' . $value['id'];
 }
 
 // LEFT JOIN = always returns the value to its left, even if it is outside the ON instruction.
