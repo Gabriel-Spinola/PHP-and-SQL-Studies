@@ -2,8 +2,6 @@
             GROUP           |       ORDER         |           LIMIT  
 ------------------------------------------------------------------------------------
 
-          
-
 <?php 
 
 $pdo = new PDO('mysql:host=localhost;dbname=pdo_study2', 'root', ''); 
