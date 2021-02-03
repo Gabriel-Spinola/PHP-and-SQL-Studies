@@ -1,81 +1,93 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+    /**
+     * PHP Built-in Functions:
+     * PHP has over 1000 built-in functions that can be called directly, from within a script, to perform a specific task.
+     * 
+     * Please check out our PHP reference for a complete overview of the PHP built-in functions.
+     * 
+     * PHP User Defined Functions:
+     * Besides the built-in PHP functions, it is possible to create your own functions.
+     * 
+     * A function is a block of statements that can be used repeatedly in a program.
+     * A function will not execute automatically when a page loads.
+     * A function will be executed by a call to the function.
+     * Create a User Defined Function in PHP
+     * A user-defined function declaration starts with the word function:
+     * 
+     * Syntax:
+     * 
+     * function functionName() {
+     *    code to be executed;
+     * }
+    */
 
-    <head>
+    $var = 'value';
 
-        <meta charset="UTF-8">
+    /**
+     * @return text 
+    */
+    function showName(string $name, string $age): void {
+        echo "<h2>The Name is: </h2>" . $name . "<hr>";
+        echo "The age is {$age}" . "<br>" . "<hr>";
+    }
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ShowName('Joao', 20);
 
-    </head>
+    /**
+     * @return calc-result 
+     * @param optional-number
+     * @param optional-number
+    */
+    function calc(int | float $number1 = 10, int | float $number2 = 5): void {
+        echo $number1 + $number2."<br>" . "<br>";
+    }
 
-    <body>
+    calc(20);
 
-        <?php
+    /**
+     * @return bool 
+    */
+    function true(): bool {
+        return true;
+    }
 
-            $var = 'value';
+    $var2 = true();
 
-            /**
-             * @return text 
-            */
-            function showName($name, $age) {
-                echo "<h2>The Name is: </h2>" . $name . "<hr>";
-                echo "The age is {$age}" . "<br>" . "<hr>";
-            }
+    /**
+     * @return string 
+    */
+    function returnString(): string {
+        return 'O' . "<br>" . "<br>";
+    }
 
-            ShowName('Joao', 20);
+    echo returnString();
 
-            /**
-             * @return calc-result 
-            */
-            function calc($number1 = 10, $number2 = 5) {
-                echo $number1 + $number2."<br>" . "<br>";
-            }
+    // ====================================================
 
-            calc(20);
+    date_default_timezone_set('America/Sao_Paulo');
 
-            function true() {
-                return true;
-            }
+    $data = date('d/m/Y', time() + (60)); // Brazil format
 
-            $var2 = true();
+    $hour = date('H:i:s');
 
-            function returnString() {
-                return 'O' . "<br>" . "<br>";
-            }
+    echo $data . ' ' . $hour;
 
-            echo returnString();
+    echo "<br>" . "<br>" . "<br>" . "<br>";
 
-            // ====================================================
+?>
 
-            date_default_timezone_set('America/Sao_Paulo');
+<?php 
 
-            $data = date('d/m/Y', time() + (60)); // Brazil format
+    $SITE_TITLE = 'STD Part 3';
 
-            $hour = date('H:i:s');
+    include('header.php');
 
-            echo $data . ' ' . $hour;
+?>
 
-            echo "<br>" . "<br>" . "<br>" . "<br>";
+<h1>Home Content</h2>
 
-        ?>
+<?php 
 
-        <?php 
+    include('footer.php');
 
-            $SITE_TITLE = 'STD Part 3';
-
-            include('header.php');
-
-        ?>
-
-        <h1>Home Content</h2>
-
-        <?php 
-
-            include('footer.php');
-
-        ?>
-        
-    </body>
-
-</html>
+?>
