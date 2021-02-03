@@ -1,16 +1,16 @@
 <?php
     //isset = exists ?
-    if(isset($_POST["acao"])) {
-        $nome = $_POST["nome"];
-        $numero = $_POST["numero"];
+    if(isset($_POST["submit"])) {
+        $name = $_POST["name"];
+        $number = $_POST["number"];
         $email = $_POST["email"];
         
-        if(strlen($nome) >= 5) {
-            echo 'your name has more or equal to 5 letters'."<br />";
+        if(strlen($name) >= 5) {
+            echo 'your name has more or equal to 5 letters' . "<br>";
         }
 
-        if(is_numeric($numero)) {
-            echo 'Number'."<br />";
+        if(is_numeric($number)) {
+            echo 'Number' . "<br>";
         }
         
         if(strstr($email, '@') != '') {
@@ -21,9 +21,9 @@
 
 <form method = "post">
 
-    <input type = "text" name = "nome"   />
-    <input type = "text" name = "numero" />
+    <input type = "text" name = "name"   />
+    <input type = "text" name = "number" />
     <input type = "text" name = "email"  />
-    <input type = "submit" name = "acao" />
+    <input type = "submit" name = "submit" />
 
 </form>
