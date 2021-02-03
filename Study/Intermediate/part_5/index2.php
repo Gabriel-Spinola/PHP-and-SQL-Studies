@@ -2,9 +2,9 @@
 
     session_start();
 
-    if(isset($_SESSION['nome'])) {
-        echo $_SESSION['nome'];
-    };
+    if(isset($_SESSION['name'])) {
+        echo $_SESSION['name'];
+    }
 
     // To Destroy a Variable Session:
     // unset($_SESSION['nome']);
