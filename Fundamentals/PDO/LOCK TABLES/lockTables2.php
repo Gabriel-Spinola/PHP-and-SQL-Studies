@@ -4,10 +4,10 @@
 
 <?php 
 
-$pdo = new PDO('mysql:host=localhost;dbname=pdo', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=pdo_study', 'root', '');
 
 $sql = $pdo -> prepare(
-    "SELECT * FROM `costumers`"
+    "SELECT * FROM `clients`"
 ); 
 
 $sql -> execute();

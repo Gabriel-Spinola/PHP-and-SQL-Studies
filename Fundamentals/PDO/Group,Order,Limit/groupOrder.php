@@ -10,9 +10,9 @@ $pdo = new PDO('mysql:host=localhost;dbname=pdo_study2', 'root', '');
 $pdo -> setAttribute(PDO :: ATTR_ERRMODE, PDO :: ERRMODE_EXCEPTION);
 
 
-// ASC = crescente, DESC = decrecente.
+// ASC = increasing, DESC = decreasing.
 $sql = $pdo -> prepare(
-    "SELECT * FROM `clientes` GROUP BY title ORDER BY id ASC LIMIT 4"
+    "SELECT * FROM `costumers` GROUP BY title ORDER BY id ASC LIMIT 4"
 ); $sql -> execute();
 
 $clientes = $sql -> fetchAll();
