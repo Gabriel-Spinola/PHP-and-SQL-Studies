@@ -1,6 +1,8 @@
 <?php
 
-/**  
+/** 
+ * # Source From W3School
+ * 
  * PHP Strings
  * A string is a sequence of characters, like "Hello world!".
  * 
