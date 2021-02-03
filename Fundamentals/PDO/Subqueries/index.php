@@ -32,7 +32,7 @@ $sql = $pdo -> prepare(
     WHERE category_id = (
         /* Sub Query */ 
         SELECT category_id FROM tb_category
-        WHERE `name` = 'terror'
+        WHERE `name` = 'horror'
     );"
 );
 
