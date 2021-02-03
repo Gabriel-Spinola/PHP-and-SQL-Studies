@@ -1,30 +1,23 @@
- <?php  
+<?php  
 
-    // to inherit a class you need to use the extends
+// to inherit a class you need to use the extends
+class Son 
+{
+    public function printHello() {
+        echo 'hallo world';
+    }
+}
 
-    class Son 
-    {
+class Father extends Son 
+{
+    public function showBye() {
+        echo 'Bye World';
+    }
+}
 
-        public function printHello() {
-            echo 'hallo world';
-        }
+$father = new Father;
+$father -> showBye();
 
-    };
+echo '<br>';
 
-    class Father extends Son
-    {
-
-        public function showBye() {
-            echo 'Bye World';
-        }
-
-    };
-
-    $father = new Father;
-    $father -> showBye();
-
-    echo '<br />';
-
-    $father -> printHello();
-
-?>
+$father -> printHello();

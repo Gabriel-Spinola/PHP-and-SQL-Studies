@@ -1,34 +1,31 @@
 <?php
 
-    // Protected you acces in fathers classes but not in other classes
+// Protected: you only can access in parent classes.
+class Son 
+{
 
-    class Son 
-    {
+    protected function func() {
+        echo 'calling func';
+    }
 
-        protected function func() {
-            echo 'calling func';
-        }
+    public function printHello() {
+        echo 'hallo world';
+    }
 
-        public function printHello() {
-            echo 'hallo world';
-        }
+};
 
-    };
+class Father extends Son
+{
 
-    class Father extends Son
-    {
+    public function showBye() {
+        echo 'Bye World';
 
-        public function showBye() {
-            echo 'Bye World';
+        echo "<br />";
 
-            echo "<br />";
+        $this -> func();
+    }
 
-            $this -> func();
-        }
+};
 
-    };
-
-    $father = new Father; 
-    $father -> showBye();
-
-?>
+$father = new Father; 
+$father -> showBye();

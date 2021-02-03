@@ -1,31 +1,27 @@
 <?php 
 
-    class Human
-    {
+class Human
+{
 
-        public $name = 'Gabriel';
-        private $age = '23';
-        private $weight = '70kg';
+    public $name = 'Gabriel';
+    private $age = '23';
+    private $weight = '70kg';
 
-        private function eat() {
-            echo 'eating';
-        }
-
-        public function grow() {
-            echo 'growing up';
-            echo "<br />";
-            
-            $this -> eat(); // calling a private function to a public
-        }
-
+    private function eat() {
+        echo 'eating';
     }
 
-    // instantiate
+    public function grow() {
+        echo 'growing up';
+        echo "<br />";
+        
+        $this -> eat(); // calling a private function
+    }
 
-    $Human = new Human; // now the Human variable has access to the entire Human class
+}
 
-    
-    $Human -> grow();
- 
+// instantiate
+$Human = new Human; // now the Human variable has access to the Human class
 
-?>
+
+$Human -> grow();

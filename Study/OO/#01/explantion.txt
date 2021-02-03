@@ -1,23 +1,20 @@
 Objects Orientation in PHP or OOP
 
-In Procedural Modules:
-    defines();
-    $vars
-    funcs(); || funcs() { }
+Procedural PHP:
+    $variables
+    functions() { }
 ;
 
-in OOP:
+Object Oriented PHP:
     /*Object*/ Human
     { 
         // attributes
-        
         name
         age
         weight
 
-        // actions and funcs who in this case are called methods()
-
-        grow()
-        eat()
+        // methods() { }
+        grow() { }
+        eat() { }
     }
 ;

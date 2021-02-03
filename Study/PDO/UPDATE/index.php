@@ -1,40 +1,38 @@
+-----------------------------
+           UPDATE               
+-----------------------------
+
 <?php 
-    $pdo = new PDO('mysql:host=localhost;dbname=pdo', 'root', ''); 
 
-    /*
-    $sql = $pdo -> prepare(
-        // updates the id 11 data
-        "UPDATE `clients` SET nome='V', sobrenome='SS' WHERE id=$id"
-                                                            if statement
-    );*/
+$pdo = new PDO('mysql:host=localhost;dbname=pdo', 'root', ''); 
 
-    {
-        $nome1 = 'Gabriel'; $sobrenome1 = 'Spinola';
-        $nome2 = 'Mario'; $sobrenome2 = 'Da Silva';
-    }
-    
-    $sql = $pdo -> prepare(
-        "UPDATE `clients` SET nome=?, sobrenome=?
-        WHERE nome=? AND sobrenome=? OR nome='V'"
-    );
+/*
+$sql = $pdo -> prepare(
+    // updates the id 11 data
+    "UPDATE `clients` SET nome='V', sobrenome='SS' WHERE id=$id"
+                                                        if statement
+);*/
 
-    if (
-        $sql -> execute(
-            [$nome1, $sobrenome1, $nome2, $sobrenome2]
-        )
-    ) { echo 'UPDATED'; }
+$nome1 = 'Gabriel'; $sobrenome1 = 'Spinola';
+$nome2 = 'Mario'; $sobrenome2 = 'Da Silva';
 
-    echo "<br> <br>";
+$sql = $pdo -> prepare(
+    "UPDATE `clients` SET nome=?, sobrenome=?
+    WHERE nome=? AND sobrenome=? OR nome='V'"
+);
 
-    $id = 11;
+if ($sql -> execute([$nome1, $sobrenome1, $nome2, $sobrenome2])) { 
+    echo 'UPDATED'; 
+}
 
-    $sql = $pdo -> prepare(
-        "UPDATE `clients` SET nome='Rogerio', sobrenome='Oiregor' WHERE id=?"
-    );
+echo "<br> <br>";
 
-    if (
-        $sql -> execute(
-            [$id]
-        )
-    ) { echo 'UPDATED2'; }
-?>
+$id = 11;
+
+$sql = $pdo -> prepare(
+    "UPDATE `clients` SET nome='Rogerio', sobrenome='Oiregor' WHERE id=?"
+);
+
+if ($sql -> execute([$id])) { 
+    echo 'UPDATED2'; 
+}
