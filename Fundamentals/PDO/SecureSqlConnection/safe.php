@@ -5,7 +5,7 @@
 <?php #Config
 
     const HOST = 'localhost';
-    const DB = 'pdo';
+    const DB = 'pdo_study';
     const USER = 'root';
     const PASSWORD = '';
 
