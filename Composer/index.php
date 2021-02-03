@@ -13,7 +13,7 @@ echo "<br><br>" . '==============================================' . "<br><br>";
     use FlyingLuscas\Correios\Client;
     use FlyingLuscas\Correios\Service;
 
-$correios = new Client;
+    $correios = new Client;
 
     print_r($correios -> zipcode() -> find('88080-230'));
 
@@ -27,4 +27,3 @@ echo "<br>" . '==============================================' . "<br>";
         item(16, 16, 16, .3, 1) ->
         calculate()
     );
-?>
