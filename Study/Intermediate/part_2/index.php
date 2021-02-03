@@ -1,90 +1,62 @@
-<!DOCTYPE html>
-<html>
+<?php
 
-    <head>
+$helloWorld = ['H' , '-' , 'E' , '-' , 'L' , '-' , 'L' , '-' , 'O'];
+$string = '';
 
-        <meta charset = "utf-8">
+for($i = 0; $i < count($helloWorld); $i++) {
+    if($helloWorld[$i] == '-') {
+        continue;
+    }
 
-        <title></title>
+    $string .= $helloWorld[$i];
+}
 
-    </head>
+echo "<br>";
 
-    <body>
+echo $string . "<br>" . "<hr>" . "<br>";
 
-        <?php
-            #region Foreach and for[]
+$arr = ['key1' => 'Guilherme' , 'João' , 'Felipe' , 'Mario'];
 
-                $helloWorld = ['H' , '-' , 'E' , '-' , 'L' , '-' , 'L' , '-' , 'O'];
-                $string = '';
+foreach($arr as $key => $value) {
+    echo $key;
+    echo '=>';
+    echo $value;
 
-                for($i = 0; $i < count($helloWorld); $i++) {
-                    if($helloWorld[$i] == '-') {
-                        continue;
-                    }
+    echo "<hr>" . "<br>";
+}
 
-                    $string .= $helloWorld[$i];
-                }
-                
-                echo "<br>";
-                
-                echo $string . "<br>" . "<hr>" . "<br>";
+$arr1 = array('G' , 'J' , 'F' , 'M');
 
-                $arr = ['key1' => 'Guilherme' , 'João' , 'Felipe' , 'Mario'];
+$total = count($arr1);
 
-                foreach($arr as $key => $value) {
-                    echo $key;
-                    echo '=>';
-                    echo $value;
+for($i = 0; $i < $total; $i++) {
+    echo $arr1[$i] . "<hr>" . "<br>";
+}
 
-                    echo "<hr>" . "<br>";
-                }
-                
-                $arr1 = array('G' , 'J' , 'F' , 'M');
+echo 'oi'. "<br>" . "<br>";
 
-                $total = count($arr1);
 
-                for($i = 0; $i < $total; $i++) {
-                    echo $arr1[$i] . "<hr>" . "<br>";
-                }
+$arr2 = array(
+    ['Guilherme' , 'Jão'],
+    [23 , 45]
+);
 
-                echo 'oi'. "<br>" . "<br>";
+echo $arr2[0][0] . "<br>" . "<br>";
 
-            #endregion
-            
-            #region multidimensional arrays
 
-                $arr2 = array(
-                    ['Guilherme' , 'Jão'],
-                    [23 , 45]
-                );
+sleep(3);
+echo 'one';
 
-                echo $arr2[0][0] . "<br>" . "<br>";
+sleep(3);
+echo 'two';
 
-            #endregion
+sleep(3);
+echo 'third';
 
-            #region Die & Sleep
+$nome = 'joao';
 
-                
-                sleep(3);
-                echo 'one';
-
-                sleep(3);
-                echo 'two';
-                
-                sleep(3);
-                echo 'third';
-
-                $nome = 'joao';
-
-                if($nome == 'joao') {
-                    echo 'tudo certo';
-                } else {
-                    die('Stopped');
-                }
-
-            #endregion
-        ?>
-
-    </body>
-
-</html>
+if($nome == 'joao') {
+    echo 'tudo certo';
+} else {
+    die('Stopped');
+}
