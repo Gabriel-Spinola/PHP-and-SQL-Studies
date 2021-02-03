@@ -15,6 +15,8 @@ for ($i = 0; $i < 10; $i++) {
     echo "The number is: $i <br>";
 }
 
+echo "<br><br>";
+
 /**
  * An array stores multiple values in one single variable:
  * 
@@ -27,10 +29,12 @@ for ($i = 0; $i < 10; $i++) {
 
 //               0       1       2
 $cars = array("Volvo", "BMW", "Toyota");
-echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . "." . "<br>";
 
 // The count() function is used to return the length (the number of elements) of an array:
-echo count($cars) . "<br>";
+echo count($cars);
+
+echo "<br><br>";
 
 // To loop through and print all the values of an indexed array, you could use a for loop, like this:
 $arrLength = count($cars);
@@ -42,6 +46,8 @@ for($x = 0; $x < $arrLength; $x++) {
 
 // Associative arrays are arrays that use named keys that you assign to them.
 $age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+
+echo "<br><br>";
 
 /**
  * A two-dimensional array is an array of arrays (a three-dimensional array is an array of arrays of arrays).
@@ -84,13 +90,16 @@ echo $cars2[3][0].": In stock: ".$cars2[3][1].", sold: ".$cars2[3][2].".<br>";
 for ($row = 0; $row < 4; $row++) {
     echo "<p><b>Row number $row</b></p>";
     echo "<ul>";
-for ($col = 0; $col < 3; $col++) {
-    echo "<li>".$cars2[$row][$col]."</li>";
-}
+
+    for ($col = 0; $col < 3; $col++) {
+        echo "<li>".$cars2[$row][$col]."</li>";
+    }
+    
     echo "</ul>";
 }
 
-;
+echo "<br>" . "<br>";
+
 
 /** 
  * PHP Sleep function
@@ -98,6 +107,7 @@ for ($col = 0; $col < 3; $col++) {
  * just delays the script execution (in seconds)
 */
 
+/*
 sleep(3);
 
 echo 'one';
@@ -109,6 +119,7 @@ echo 'two';
 sleep(3);
 
 echo 'third';
+*/
 
 /**
  * PHP Die Function
@@ -119,7 +130,7 @@ echo 'third';
 $nome = 'joao';
 
 if($nome == 'joao') {
-    echo 'tudo certo';
+    echo 'All right!';
 } else {
     die('Stopped');
 }
