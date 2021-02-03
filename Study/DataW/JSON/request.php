@@ -1,10 +1,9 @@
 <?php 
 
-    $arr = [
-        'nome' => 'guilherme',
-        'cidade' => 'floripa'
-    ];
+$arr = [
+    'name' => 'guilherme',
+    'city' => 'floripa'
+];
 
-    $json = json_encode($arr);
-    echo $json;
-?>
+$json = json_encode($arr);
+echo $json;

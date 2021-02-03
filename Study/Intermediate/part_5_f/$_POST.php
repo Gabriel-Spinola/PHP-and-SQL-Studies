@@ -17,44 +17,44 @@
                 $name = $_POST['name'];
                 $email = $_POST['email'];
 
-                echo 'name: '.$name."<br />";
+                echo 'name: '.$name."<br>";
                 echo 'email: '.$email;
             }
 
-            echo "<br />";
+            echo "<br>";
 
         ?>
 
-        <br />
+        <br>
 
         <form method="post">
 
-            <input type="text" name="name"                  />
-            <input type="text" name="email"                 />
-            <input type="submit" name="action" value="Send" />
+            <input type="text" name="name"                 >
+            <input type="text" name="email"                >
+            <input type="submit" name="action" value="Send">
 
         </form>
 
-        <br />
-        <hr />
-        <br />
+        <br>
+        <hr>
+        <br>
 
         <?php
         
-            if( isset( $_POST['act'] ) ):
-                if( ($_POST['number1'] != null) and ($_POST['number2'] != null) ):
-                    print( $_POST['number1'] + $_POST['number2'] );
+            if(isset($_POST['act'])):
+                if(($_POST['number1'] != null) and ($_POST['number2'] != null)):
+                    print($_POST['number1'] + $_POST['number2']);
 
                 endif;
 
             endif;
 
-            if( isset( $_POST['sub'] ) ):
+            if(isset($_POST['sub'])):
                 if($_POST['value'] != null):
-                    foreach( $_POST['value'] as $key => $value ):
+                    foreach($_POST['value'] as $key => $value):
                         print($key);
                         print(' => '); 
-                        print($value."<br />"."<hr />");
+                        print($value."<br>"."<hr>");
 
                     endforeach;
 
@@ -64,16 +64,16 @@
 
         ?>
 
-        <br />
+        <br>
 
         <form method="post">
 
-            <input type="text" name="number1"            />
-            <input type="text" name="number2"            />
-            <input type="submit" name="act" value="Send" />
+            <input type="text" name="number1"           >
+            <input type="text" name="number2"           >
+            <input type="submit" name="act" value="Send">
 
-            <br />
-            <br />
+            <br>
+            <br>
 
             <select name="name">
 
@@ -82,16 +82,16 @@
 
             </select>
 
-            <input type="checkbox" name="value[]" value="10" /> <span>10</span> 
-            <input type="checkbox" name="value[]" value="20" /> <span>20</span>
-            <input type="checkbox" name="value[]" value="30" /> <span>30</span>
-            <input type="checkbox" name="value[]" value="40" /> <span>40</span>
-            <input type="submit" name="sub" value="Send"     /> <span>  </span>
+            <input type="checkbox" name="value[]" value="10"> <span>10</span> 
+            <input type="checkbox" name="value[]" value="20"> <span>20</span>
+            <input type="checkbox" name="value[]" value="30"> <span>30</span>
+            <input type="checkbox" name="value[]" value="40"> <span>40</span>
+            <input type="submit" name="sub" value="Send"    > <span>  </span>
 
         </form>
 
-        <br />
-        <hr />
+        <br>
+        <hr>
 
     </body>
 

@@ -1,6 +1,4 @@
-        <span>footer yoo!</span>
+    <span>footer!</span>
 
-        </body>
-    </html>
-
-<!--End Cross File Region--->
+    </body>
+</html>

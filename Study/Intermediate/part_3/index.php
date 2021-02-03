@@ -12,61 +12,69 @@
     <body>
 
         <?php
-            #Creating Functions >->
 
-                $var = 'value';
+            $var = 'value';
 
-                function showName($nome, $idade) {
-                    echo "<h2>Nome é: </h2>".$nome."<hr />";
-                    echo "A idade é {$idade}"."<br />"."<hr />";
-                }
+            /**
+             * @return text 
+            */
+            function showName($name, $age) {
+                echo "<h2>The Name is: </h2>" . $name . "<hr>";
+                echo "The age is {$age}" . "<br>" . "<hr>";
+            }
 
-                ShowName('Joao', 20);
+            ShowName('Joao', 20);
 
-                function calc($number1 = 10, $number2 = 5) {
-                    echo $number1 + $number2."<br />"."<br />";
-                }
+            /**
+             * @return calc-result 
+            */
+            function calc($number1 = 10, $number2 = 5) {
+                echo $number1 + $number2."<br>" . "<br>";
+            }
 
-                calc(20);
+            calc(20);
 
-                function true() {
-                    return true;
-                }
+            function true() {
+                return true;
+            }
 
-                $var2 = true();
+            $var2 = true();
 
-                function returnString() {
-                    return 'O'."<br />"."<br />";
-                }
+            function returnString() {
+                return 'O' . "<br>" . "<br>";
+            }
 
-                echo returnString();
+            echo returnString();
 
-            #Pragma End --<
+            // ====================================================
 
-            #Native Function >->
+            date_default_timezone_set('America/Sao_Paulo');
 
-                date_default_timezone_set('America/Sao_Paulo');
+            $data = date('d/m/Y', time() + (60)); // Brazil format
 
-                $data = date('d/m/Y', time() + (60)); // Brazil format
-                $hour = date('H:i:s');
-                echo $data.' '.$hour."<br />"."<br />"."<br />"."<br />";
+            $hour = date('H:i:s');
 
-            #Pragma End --<
+            echo $data . ' ' . $hour;
+
+            echo "<br>" . "<br>" . "<br>" . "<br>";
+
         ?>
 
-        <!--Cross File Region Include Example #pragma NF---> 
+        <?php 
 
-            <?php 
-                $SITE_TITLE = 'STD Part 3';
+            $SITE_TITLE = 'STD Part 3';
 
-                include('header.php');
-            ?>
+            include('header.php');
 
-            <h1>Meu conteudo da home</h2>
+        ?>
 
-            <?php 
-                include('footer.php');
-            ?>
+        <h1>Home Content</h2>
+
+        <?php 
+
+            include('footer.php');
+
+        ?>
         
     </body>
 

@@ -1,74 +1,56 @@
-<!DOCTYPE html>
-<html lang = "en">
+<?php
 
-    <head>
+#region Arrays
 
-        <meta charset = "UTF-8">
+    $N = ['Gabriel' , 'Guilherme' , 'Filipe'];
+    echo $N[0].'<br>';
+    echo $N[1].'<br>';
+    echo $N[2].'<br>' . '<br>';
 
-        <title>Aula_01 PHP</title>
+    $information['n'] = 'G';
+    $information['i'] = 2;
+    $information['c'] = 'F';
+    echo $information['n'].'<br>';
+    echo $information['i'].'<br>';
+    echo $information['c'].'<br>' . '<br>';
 
-    </head>
+#endregion
 
-    <body>
+#region Vars & Consts
 
-        <?php
-            #region Arrays
-            
-                $N = ['Gabriel' , 'Guilherme' , 'Filipe'];
-                echo $N[0].'<br />';
-                echo $N[1].'<br />';
-                echo $N[2].'<br />'.'<br />';
+    const NAME = 'Gabriel'; // Const
+    echo NAME.'<br>'; // Const dec
 
-                $information['n'] = 'G';
-                $information['i'] = 2;
-                $information['c'] = 'F';
-                echo $information['n'].'<br />';
-                echo $information['i'].'<br />';
-                echo $information['c'].'<br />'.'<br />';
+    $name = 'Gui'; // var 
+    echo 'My name is ' . $name . '<br>' . '<br>'; // var dec
 
-            #endregion
+#endregion
 
-            #region Vars & Consts
+#region Concatenation
 
-                define('NOME' , 'gab'); // Const
-                echo NOME.'<br />'; // Const dec
+    $className = 'Box';
+    $id = 5;
 
-                $nome = 'Gui'; // var 
-                echo 'Meu nome é '.$nome.'<br />'.'<br />'; // var dec
-           
-            #endregion
+    echo 'the id is: ' . $id . '<br>' . '<br>';
 
-            #region Concatenation
+    echo "<div class = \"$className\"> </div>";
 
-                $className = 'Box';
-                $id = 5;
+#endregion
 
-                echo 'o id é: '.$id.'<br />'.'<br />';
+#region Math
 
-                echo "<div class = \"$className\"> </div>";
+    $number = 5 + 5;
+    $number1 = 10 - 4;
+    
+    $result = $number * $number1;
+    $result1 = $result / 5;
 
-            #endregion
+    echo $result1.'<br>';
 
-            #region Math
+    $expression = 20 * (2 + 40) / 2;
+    $rest = 1 % 2;
 
-                $number = 5 + 5;
-                $number1 = 10 - 4;
-                
-                $result = $number * $number1;
-                $result1 = $result / 5;
+    echo $expression.'<br>'.
+    $rest.'<br>' . '<br>';
 
-                echo $result1.'<br />';
-
-                $expression = 20 * (2 + 40) / 2;
-                $rest = 1 % 2;
-
-                echo $expression.'<br />'.
-                $rest.'<br />'.'<br />';
-
-            #endregion
-
-        ?>
-        
-    </body>
-
-</html>
+#endregion

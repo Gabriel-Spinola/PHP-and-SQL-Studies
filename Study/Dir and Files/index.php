@@ -1,37 +1,45 @@
 <?php
-	//file_get_contents('nomedoarquivo');
-	//file_put_contents('nomedoarquivo','conteúdo');
+	// file_get_contents ('filename');
+	// file_put_contents ('filename', 'content');
 
 	/*
-		manipulação de pastas
+		handling folders
 	*/
-	//mkdir('pasta');
+
+	// mkdir ('folder');
+
 	/*
-	if(is_dir('request.php')){
-		echo 'é uma pasta válida';
-	}else{
-		echo 'não existe ou não é uma pasta';
-	}
-	*/
-	//deletar a pasta
-	//rmdir('pasta');
-	if ($handle = opendir('pasta')) {
-		// Esta é a forma correta de varrer o diretório
-		while ($file = readdir($handle)) {
-			if($file == '.' || $file == '..'){
-				continue;
-			}
-			/*
-			if(is_dir('pasta/'.$file) == false){
-				// é um arquivo
-			}else{
-				//uma pasta
-			}
-			*/
-			echo "$file\n";
-			echo '<br />';
+
+		if (is_dir ('request.php')) {
+			echo 'is a valid folder';
+		} else {
+			echo 'does not exist or is not a folder';
 		}
 
-		closedir($handle);
+	*/
+
+	// delete the folder
+	// rmdir ('folder');
+	if ($handle = opendir('folder')) {
+		// This is the correct way to scan the directory
+		while ($file = readdir($handle)) {
+			if ($file == '.' || $file == '..') {
+				continue;
+			}
+
+			/*
+				if (is_dir ('folder /' . $file) == false) {
+				  	// is a file
+				} else {
+				 	//a folder
+				}
+			*/
+
+			echo "$file \n";
+
+			echo '<br>';
+		}
+
+		closedir ($handle);
 	}
 ?>

@@ -19,24 +19,25 @@
                 $name = $_GET['name'];
                 $email = $_GET['email'];
 
-                echo $name."<br />";
+                echo $name . "<br>";
                 echo $email;
             }
-            echo "<br />";
+
+            echo "<br>";
         ?>
 
-        <br />
+        <br>
 
         <form>
 
-            <input type="text" name="name"                  />
-            <input type="text" name="email"                 />
-            <input type="submit" name="action" value="Send" />
+            <input type="text" name="name"                 >
+            <input type="text" name="email"                >
+            <input type="submit" name="action" value="Send">
 
         </form>
 
-        <br />
-        <hr />
+        <br>
+        <hr>
 
     </body>
 
