@@ -103,6 +103,7 @@ echo "<br>" . "<br>";
 $arr1 = ['key1' => 'value1', 'key2' => 'value2'];
 $arr2 = ['key3' => 'value3', 'key4' => 'value4'];
 
+// Merge one or more arrays
 $result2 = array_merge($arr1, $arr2);
 print_r($result2);
 
@@ -115,4 +116,5 @@ print_r(array_intersect($ar1, $ar2)); //return the same value in two identical k
 
 $array_ = ["<p>gas</p>", 'joa', "<h1>fab</h1>"];
 
+// Applies the callback to the elements of the given arrays
 print_r(array_map('strip_tags', $array_));
