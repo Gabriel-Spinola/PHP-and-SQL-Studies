@@ -14,6 +14,7 @@
  ## Reference Links
  Stuff that helped to create this repository: <br>
  - [PHP Documentation](https://www.php.net/docs.php)
+ - [SQL Documentation](https://dev.mysql.com/doc/refman/8.0/en/)
  - [W3School](https://www.w3schools.com/default.asp)
  - [Refactoring Guru](https://refactoring.guru/)
  - [Danki Code](https://cursos.dankicode.com/)
