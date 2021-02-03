@@ -7,6 +7,12 @@
  * must be replaceable with its base class.
  * 
  * The First example already shows how class extensions should work
+ * 
+ * Google definition
+ * 
+ * The Liskov Substitution Principle in practical software development.
+ * The principle defines that objects of a superclass shall be replaceable with objects of its subclasses without
+ * *breaking the application. That requires the objects of your subclasses to behave in the same way as the objects of your superclass
 */
 
 # First Example

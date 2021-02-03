@@ -8,6 +8,12 @@
  * interfaces and methods that will not be used.
  * 
  * Following the same patten as OCP and SPR.
+ * 
+ * Google Definition
+ * 
+ * In the field of software engineering, the interface-segregation principle (ISP)
+ * states that no client should be forced to depend on methods it does not use. ... 
+ * ISP is one of the five SOLID principles of object-oriented design, similar to the High Cohesion Principle of GRASP.
 */
 
 # First Example

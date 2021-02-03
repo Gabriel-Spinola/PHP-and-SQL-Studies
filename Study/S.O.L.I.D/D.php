@@ -10,6 +10,11 @@
  * in the Second example shows how to do it with __Dependency Injection__
  * (good, but not perfect),
  * and in the Third example it shows how to do with __DIP__.
+ * 
+ * Google Definition:
+ * 
+ * The Dependency Inversion Principle (DIP) states that high level modules should not depend on low level modules;
+ * both should depend on abstractions. Abstractions should not depend on    * details. Details should depend upon abstractions
 */
 
 # First Example
