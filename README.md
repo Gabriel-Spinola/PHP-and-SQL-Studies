@@ -1,10 +1,12 @@
-# PHP, SQL and Software Architecture Study
+# PHP, SQL, and Software Architecture Study
  
  This Repository groups all my practical exercises and notes while studying PHP, SQL, and Software Architecture
  
- ## How to run in your PC
+ ## How to run on your PC
  you'll need the [jQuery library](https://jquery.com/download/), the [MySql(phpMyAdmin) Database](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/DataBases), and the [PHPMailer](https://github.com/PHPMailer/PHPMailer).
- But you can find it all in this repository
+ But you can find it all in this repository.
+ 
+ Also, to run the MVC System go to [Application.php](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/blob/main/Achitecture%26Others/MVC%26Route/Application.php) and in the constant "INCLUDE_PATH" your put you path to the project
  
  ## Reference Links
  Stuff that helped to create this repository: <br>
