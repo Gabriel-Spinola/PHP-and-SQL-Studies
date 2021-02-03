@@ -4,6 +4,8 @@
 
 <?php
 
+$pdo = new PDO('mysql:host=localhost;dbname=pdo_study', 'root', '');
+
 $sql = $pdo -> prepare(
     // Connect both tables and rename the post id (following the "ON" rules)
     "SELECT `posts`.*, `categories`.*, `posts`.`id` AS `post_id` FROM `posts` 
