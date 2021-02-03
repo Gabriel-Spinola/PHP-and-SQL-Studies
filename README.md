@@ -3,9 +3,10 @@
  This Repository groups all my practical exercises and notes while studying PHP, SQL, and Software Architecture
  
  ## How to run in your PC
+ you'll need the [jQuery library](https://jquery.com/download/), the [MySql(phpMyAdmin) Database](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/DataBases), and the [PHPMailer](https://github.com/PHPMailer/PHPMailer).
+ But you can find it all in this repository
  
- 
- ## Links
+ ## Reference Links
  Stuff that helped to create this repository: <br>
  - [W3School](https://www.w3schools.com/default.asp)
  - [Refactoring Guru](https://refactoring.guru/)
