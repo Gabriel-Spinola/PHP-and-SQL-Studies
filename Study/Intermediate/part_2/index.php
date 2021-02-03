@@ -17,14 +17,6 @@ echo $string . "<br>" . "<hr>" . "<br>";
 
 $arr = ['key1' => 'Guilherme' , 'João' , 'Felipe' , 'Mario'];
 
-foreach($arr as $key => $value) {
-    echo $key;
-    echo '=>';
-    echo $value;
-
-    echo "<hr>" . "<br>";
-}
-
 $arr1 = array('G' , 'J' , 'F' , 'M');
 
 $total = count($arr1);
@@ -45,12 +37,15 @@ echo $arr2[0][0] . "<br>" . "<br>";
 
 
 sleep(3);
+
 echo 'one';
 
 sleep(3);
+
 echo 'two';
 
 sleep(3);
+
 echo 'third';
 
 $nome = 'joao';
