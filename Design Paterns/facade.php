@@ -1,47 +1,37 @@
 <?php
 
-    // Exemplo de loja virtual.
-    // Em que cada ação tem sua classe.
+/**
+ * a facade is an object that serves as a front-facing interface masking more complex underlying or structural code
+*/
 
-    // adicionar - carrinho - fechar carrinho.
-    // pedido - fechar pedido.
+class Cart
+{
+    function closeCart() {
+        echo 'cart closed';
+    }
+}
 
-    class Cart
-    {
+class Freight
+{
+    function freightCalc() {
+        echo 'freight calculated';
+    }
+}
 
-        function closeCart() {
-            echo 'cart closed';
-        }
+class Shop
+{
+    function closeRequest() {
+        $this -> closeCart();
+        // $this -> freightCalc();
 
+        echo 'request closed';
     }
 
-    class Freight
-    {
-
-        function freightCalc() {
-            echo 'freight calculated';
-        }
-
+    function closeCart() {
+        $cart = new Cart();
+        $cart -> closeCart();
     }
+};
 
-    class Shop
-    {
-
-        function closeRequest() {
-            $this -> closeCart();
-            // $this -> freightCalc();
-
-            echo 'request closed';
-        }
-
-        function closeCart() {
-            $cart = new Cart();
-            $cart -> closeCart();
-        }
-
-    };
-
-    $shop = new Shop();
-    $shop -> closeRequest();
-
-?>
+$shop = new Shop();
+$shop -> closeRequest();
