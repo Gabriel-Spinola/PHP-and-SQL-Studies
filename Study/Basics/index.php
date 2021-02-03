@@ -30,12 +30,9 @@
  * Strings, Int, float, Boolean, Array, Null and Object.
 */
 
-    $name = 'Gui'; // string variable 
-    echo 'My name is ' . $name . '<br>' . '<br>'; // printing variable
-
-    const NAME = 'Gabriel'; // constant
-    echo NAME.'<br>'; // printing constant
-
+    // the Dollar sign ($) is used to create or reference a variable
+    // Variable Structure: { $variableName = someValue; OR $variableName; }
+    
     $int = 1;
     $string = "Hallo!";
     $float = 12.5;
@@ -47,6 +44,12 @@
     
     $array = [];
     $array2 = array();
+
+    $name = 'Gui'; // string variable 
+    echo 'My name is ' . $name . '<br>' . '<br>'; // printing variable
+
+    const NAME = 'Gabriel'; // constant
+    echo NAME.'<br>'; // printing constant
 
 #endregion
 
@@ -81,7 +84,7 @@
 
 #region Arrays
 
-    $N = ['Gabriel' , 'Guilherme' , 'Filipe'];
+    $N = ['Gabriel' , 'John' , 'Mari'];
 
     echo $N[0].'<br>';
     echo $N[1].'<br>';
