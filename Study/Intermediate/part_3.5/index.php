@@ -75,6 +75,7 @@ print_r($names); // used to see arrays
 
 echo "<br>" . "<br>";
 
+// join array elements with a string
 $names = implode(' ', $names);
 
 echo $names . "<br>" . "<br>";
