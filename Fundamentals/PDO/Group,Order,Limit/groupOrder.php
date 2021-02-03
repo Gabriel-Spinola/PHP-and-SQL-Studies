@@ -13,8 +13,8 @@ $sql = $pdo -> prepare(
     "SELECT * FROM `costumers` GROUP BY title ORDER BY id ASC LIMIT 4"
 ); $sql -> execute();
 
-$clientes = $sql -> fetchAll();
+$costumers = $sql -> fetchAll();
 
-foreach ($clientes as $key => $value) {
+foreach ($costumers as $key => $value) {
     echo '<hr>' . 'value: ' . $value['name'] . '; title: ' . $value['title'] . '; id ' . $value['id'];
 }

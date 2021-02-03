@@ -14,9 +14,9 @@ $sql = $pdo -> prepare(
 
 $sql -> execute();
 
-$clientes = $sql -> fetchAll();
+$costumers = $sql -> fetchAll();
 
-foreach ($clientes as $key => $value) {
+foreach ($costumers as $key => $value) {
     echo '<hr>' . 'value: ' . $value['nome'];
     echo ' | ' . $value['title_name'];
 }
