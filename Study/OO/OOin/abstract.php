@@ -1,44 +1,42 @@
 <?php 
     
-    // An abstract class can only be inherited, it cannot be instantiated
-    abstract class Test
-    {
-        public function func() {
-            echo 'calling method';
-        }
+// An abstract class can only be inherited, it cannot be instantiated
+abstract class Test
+{
+    public function func() {
+        echo 'calling method';
+    }
 
-        abstract function func2();
-    };
+    abstract function func2();
+};
 
-    class Main extends Test 
-    {
-        public function func2() {
-            echo 'calling a abstract method';
-        }
+class Main extends Test 
+{
+    public function func2() {
+        echo 'calling a abstract method';
+    }
 
-        public static function staticMethod() {
-            echo 'Static Method';
-        }
+    public static function staticMethod() {
+        echo 'Static Method';
+    }
 
-        public function method() {
-            self :: staticMethod();
-            echo " // Calling a Static method in a Public Method";
-        }
-    };
+    public function method() {
+        self :: staticMethod();
+        echo " // Calling a Static method in a Public Method";
+    }
+};
 
-    $main = new Main;
-    $main -> func();
+$main = new Main;
+$main -> func();
 
-    echo "<br>";
+echo "<br>";
 
-    $main -> func2();
+$main -> func2();
 
-    echo "<br>";
+echo "<br>";
 
-    $main :: staticMethod();
+$main :: staticMethod();
 
-    echo "<br>";
+echo "<br>";
 
-    $main -> method();
-
-?>
+$main -> method();

@@ -4,10 +4,13 @@ include('interface.php');
 
 class Test implements interface1
 {
-    public function print($par) {
-        echo $par;
+    /**
+     * @return string
+    */
+    public function print($text) {
+        echo $text;
     }
 }
 
 $test = new Test;
-$test -> print('hallo world');
+$test -> print(text: 'hallo world');

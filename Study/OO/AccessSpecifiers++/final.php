@@ -2,25 +2,34 @@
 
 // if a class is final you cannot inherit it
 // to inherit a class you need to use the extends
-
-final class Son 
+final class Father
 {
+    /**
+     * @return string
+     * 
+     * Print "hallo, world"
+    */
     public function printHello() {
         echo 'hallo world';
     }
 }
 
-class Father 
+class Son
 {
+    /**
+     * @return string
+     * 
+     * Print "hallo, world"
+    */
     public function showBye() {
         echo 'Bye World';
     }
 }
 
-$father = new Father;
-$father -> showBye();
+$son = new Son;
+$son -> showBye();
 
 echo '<br />';
 
-$son = new Son;
-$son -> printHello();
+$father = new Father;
+$father -> printHello();

@@ -1,9 +1,8 @@
 <?php
 
 // Protected: you only can access in parent classes.
-class Son 
+class Father 
 {
-
     protected function func() {
         echo 'calling func';
     }
@@ -11,12 +10,10 @@ class Son
     public function printHello() {
         echo 'hallo world';
     }
+}
 
-};
-
-class Father extends Son
+class Son extends Father
 {
-
     public function showBye() {
         echo 'Bye World';
 
@@ -24,8 +21,7 @@ class Father extends Son
 
         $this -> func();
     }
+}
 
-};
-
-$father = new Father; 
-$father -> showBye();
+$son = new Son;
+$son -> showBye();

@@ -1,10 +1,8 @@
 <?php
 
-    class myClass
-    {
-        const VALUE = 300;
-    }
+class myClass
+{
+    const VALUE = 300;
+}
 
-    echo myClass :: VALUE
-
-?>
+echo myClass :: VALUE;

@@ -1,13 +1,11 @@
 <?php 
 
-    namespace Home;
+namespace Home;
 
-    class Initial
+class Initial
+{
+    function __construct()
     {
-        function __construct()
-        {
-            echo 'The Initial class has been called with success!' . "<br> \n";
-        }
+        echo 'The Initial class has been called with success!' . "<br> \n";
     }
-
-?>
+}
