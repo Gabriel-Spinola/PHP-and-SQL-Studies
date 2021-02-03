@@ -27,10 +27,10 @@
 $pdo = new PDO('mysql:host=localhost;dbname=pdo_study4', 'root', '');
 
 $sql = $pdo -> prepare(
-    // Query
+    // Query | outer
     "SELECT * FROM tb_movies 
     WHERE category_id = (
-        /* Sub Query */ 
+        -- Sub Query | inner
         SELECT category_id FROM tb_category
         WHERE `name` = 'horror'
     );"
