@@ -6,7 +6,7 @@
  you'll need the [jQuery library](https://jquery.com/download/), the [MySql(phpMyAdmin) Database](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/DataBases), and the [PHPMailer](https://github.com/PHPMailer/PHPMailer).
  But you can find it all in this repository.
  
- Also, to run the MVC System go to [Application.php](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/blob/main/Achitecture%26Others/MVC%26Route/Application.php) and in the constant "INCLUDE_PATH" your put you path to the project
+ Also, to run the MVC System go to [Application.php](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/blob/main/Achitecture%26Others/MVC%26Route/Application.php) and in the constant "INCLUDE_PATH" put your path to the project
  
  ## Where To Start
  First Start With the [Fundamentals](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/Fundamentals): [Basics](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/Fundamentals/Basics) -> [Intermediate](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/Fundamentals/Intermediate) -> [Advanced](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/Fundamentals/Advanced) -> [OO](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/Fundamentals/OO) -> [PDO](https://github.com/Gabriel-Spinola/PHP-and-SQL-Study/tree/main/Fundamentals/PDO);<br>
