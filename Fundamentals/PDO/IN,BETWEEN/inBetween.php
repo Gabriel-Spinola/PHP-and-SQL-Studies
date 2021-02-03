@@ -22,7 +22,7 @@ echo "<br><br>" . "=============================================================
 
 // SELECT ALL clients with register_moment BETWEEN 2020-11-19 23:11:47 AND 2020-11-19 23:15:21
 $sql = $pdo -> prepare(
-    "SELECT * FROM clients WHERE register_moment BETWEEN '2020-11-19 23:11:47' AND '2020-11-19 23:15:21'"
+    "SELECT * FROM clients WHERE register_moment BETWEEN '2021-02-03 14:01:49' AND '2021-02-03 14:01:08'"
 );
 
 $sql -> execute();
