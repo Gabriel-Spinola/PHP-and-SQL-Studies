@@ -22,12 +22,12 @@ if ($a instanceof A) {
 
 echo "\n==== Callback ====\n";
 
-function execute($b, $a = 'Foo') {
+function execute($b, $a = 'Foo'): void {
     if ($b instanceof Closure) {
         $b($a);
     }
 }
 
-execute(function($name) {
+execute(function($name): void {
     echo 'Hello, ' . $name;
 });

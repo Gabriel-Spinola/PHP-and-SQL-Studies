@@ -4,7 +4,7 @@
 
 $name = 'John';
 
-function Test(string &$arg) {
+function Test(string &$arg): void {
     $arg = 'Jorge';
 }
 

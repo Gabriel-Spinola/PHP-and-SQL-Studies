@@ -7,7 +7,7 @@
 
 echo "=============Normal================\n";
 
-function normal() {
+function normal(): int {
     $n = 0;
     $n++;
 
@@ -19,7 +19,7 @@ echo normal() . "\n";
 
 echo "=============Static Keyword================\n";
 
-function staticKeyword() {
+function staticKeyword(): int {
     static $n = 0;
     $n++;
 
@@ -32,7 +32,7 @@ echo staticKeyword() . "\n";
 echo "=============Static Keyword in Classes================\n";
 
 class Test {
-    public function test() {
+    public function test(): int {
         static $n = 0;
         $n++;
 

@@ -6,7 +6,7 @@
  * successive repetitions are processed up to the critical step where the condition is met
 */
 
-function test() {
+function test(): void {
     static $i = 0;
 
     echo 'testo' . ' ' . $i . ' ';
