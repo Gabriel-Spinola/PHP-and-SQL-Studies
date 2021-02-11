@@ -7,12 +7,14 @@
  * passed as argument, or returned as a value, respectively. 
 */
 
-$stringNumber;
-
 function testRun(): ?string {
     return 9;
 }
 
-$stringNumber = testRun();
+var_dump(testRun()); // return string(1) "9".
 
-var_dump($stringNumber);
+function test(?string $number): mixed {
+    return $number;
+}
+
+var_dump(test(16)); // return string(2) "16".
