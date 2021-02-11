@@ -6,8 +6,8 @@
 // Return 0 if the both have the same value
 
 $foo = 10 <=> 8; // returns 1
-$dib = 10 <=> 10; // return 0
-$bar = 8 <=> 10; // return -1
+$dib = 10 <=> 10; // returns 0
+$bar = 8 <=> 10; // returns -1
 
 echo $foo . "\n" . $dib . "\n" . $bar . "\n\n";
 
