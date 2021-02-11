@@ -13,6 +13,8 @@ echo $name; // Returns Jorge
 
 echo "\n\n";
 
+// You can also use references with variables;
+
 $foo = 'Gabriel';
 
 $test = &$foo; // test now it's a reference to $foo.
