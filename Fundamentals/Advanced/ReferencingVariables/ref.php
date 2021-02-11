@@ -10,3 +10,15 @@ function Test(string &$arg) {
 
 Test($name); // Pass John
 echo $name; // Returns Jorge
+
+echo "\n\n";
+
+$foo = 'Gabriel';
+
+$test = &$foo; // test now it's a reference to $foo.
+
+echo $test . "\n"; // Return 'Gabriel'.
+
+$test = 'Jao'; // by setting $test to another value, the $foo variable also will change its value, cause $test is a reference to $foo.
+
+echo $foo . "\n"; // Returns 'Jao'.
