@@ -7,8 +7,12 @@
  * passed as argument, or returned as a value, respectively. 
 */
 
-$integer;
+$stringNumber;
 
 function testRun(): ?string {
     return 9;
 }
+
+$stringNumber = testRun();
+
+var_dump($stringNumber);
