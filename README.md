@@ -36,7 +36,3 @@ For further learning in software development, consider these articles and books:
 ## Contributing
 
 Contributions are welcome! If you'd like to make significant changes, please open an issue first to discuss your ideas.
-
-## Notes
-
-[Add any additional notes here if needed.]
